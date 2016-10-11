@@ -5,7 +5,7 @@ RUN yum update -y
 RUN yum install -y epel-release
 RUN yum install -y nodejs
 RUN yum install -y npm
-# RUN [ 'npm', 'install', '-g', 'typescript' ]
-# RUN [ 'npm', 'install', '-g', 'webpack' ]
-CMD [ '/bin/bash' ]
+RUN npm install -g typescript
+RUN npm install -g webpack
+CMD /bin/bash
 
