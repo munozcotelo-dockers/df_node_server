@@ -10,4 +10,4 @@
 docker build -t "amgarcia/nodeserver" https://github.com/munozcotelo/df_node_server.git
 
 # Run Image
-docker run -it amgarcia/nodeserver
+sudo docker run -it -p 9090:9090 --volume #local_path#:/appjs amgarcia/df_node_server
