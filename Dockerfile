@@ -7,5 +7,6 @@ RUN yum install -y nodejs
 RUN yum install -y npm
 RUN npm install -g typescript
 RUN npm install -g webpack
+RUN npm install -g vue-cli
 CMD /bin/bash
 
