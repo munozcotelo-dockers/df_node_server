@@ -8,5 +8,6 @@ RUN yum install -y npm
 RUN npm install -g typescript
 RUN npm install -g webpack
 RUN npm install -g vue-cli
+EXPOSE 9090
 CMD /bin/bash
 
